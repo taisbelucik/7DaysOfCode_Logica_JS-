@@ -12,49 +12,50 @@
 
 // // Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista de aprendizado.
 
-var frontBack = prompt('Qual área você quer seguir? Front-End ou Back-End?')
+var frontBack = prompt("Qual área você quer seguir? Front-End ou Back-End?");
 
-    if(frontBack === 'Front-End'){
-        var reactVue = prompt('No Front-End você quer aprender React ou Vue ?')
-        if(reactVue === 'React' || 'Vue'){
-          var resp =  prompt('quer se especializar apenas nessa área, Sim ou não?')
-        }if(resp === 'Sim'){
-            window.alert('excelente caminho')
-        }else if(resp === 'não'){
-            var resp1 =  prompt('Então você gostaria de estudar para se tornar um fullStack, sim ou não?')
-            if(resp1 === 'Sim'){
-                window.alert('Essa área é excelente')
-            }else if(resp1 === 'não'){
-              var outraArea =  window.alert('É muito importante escolher um caminho')
-                
-
-              }
-              
-            }
-        } else if(frontBack === 'Back-End'){
-            var cJava = prompt('No Back-End você quer aprender C# ou aprender Java ?')
-            if(cJava === 'C#'|| 'Java'){
-               var resp2 =  prompt('quer se especializar apenas nessa área, Sim ou não?')
-                }if(resp2 === 'Sim'){
-                window.alert('excelente caminho')
-            }else if(resp2 === 'não'){
-                var resp3 =  prompt('Então você gostaria de estudar para se tornar um fullStack, sim ou não?')
-                if(resp3 === 'Sim'){
-                    window.alert('Essa área é excelente')
-                }else if(resp3 === 'não'){
-                  var outraArea1 =  prompt('Estude e busque encontrar um caminho?')
-                  
-                }
-            }
-            
-
-        }
-
-        var outraTec = prompt("Há outra tecnologia que você gostaria de aprender? Digite 'sim' em caso positivo.");
-        while (outraTec === 'sim'){
-        var tecNova = prompt("Qual seria ?");
-        alert(`${tecNova} é muito bacana!`)
-        outraTec= prompt("Há outra tecnologia que você gostaria de aprender? Digite 'sim' em caso positivo.");
+if (frontBack === "Front-End") {
+  var reactVue = prompt("No Front-End você quer aprender React ou Vue ?");
+  if (reactVue === "React" || "Vue") {
+    var resp = prompt("quer se especializar apenas nessa área, Sim ou não?");
+  }
+  if (resp === "Sim") {
+    window.alert("excelente caminho");
+  } else if (resp === "não") {
+    var resp1 = prompt(
+      "Então você gostaria de estudar para se tornar um fullStack, sim ou não?"
+    );
+    if (resp1 === "Sim") {
+      window.alert("Essa área é excelente");
+    } else if (resp1 === "não") {
+      var outraArea = window.alert("É muito importante escolher um caminho");
+    }
+  }
+} else if (frontBack === "Back-End") {
+  var cJava = prompt("No Back-End você quer aprender C# ou aprender Java ?");
+  if (cJava === "C#" || "Java") {
+    var resp2 = prompt("quer se especializar apenas nessa área, Sim ou não?");
+  }
+  if (resp2 === "Sim") {
+    window.alert("excelente caminho");
+  } else if (resp2 === "não") {
+    var resp3 = prompt(
+      "Então você gostaria de estudar para se tornar um fullStack, sim ou não?"
+    );
+    if (resp3 === "Sim") {
+      window.alert("Essa área é excelente");
+    } else if (resp3 === "não") {
+      var outraArea1 = alert("Estude e busque encontrar um caminho");
+    }
+  }
 }
 
-
+var outraTec = prompt("Há outra tecnologia que você gostaria de aprender? Digite 'sim' em caso positivo."
+);
+while (outraTec === "sim") {
+  var tecNova = prompt("Qual seria ?");
+  alert(`${tecNova} é muito bacana!`);
+  outraTec = prompt(
+    "Há outra tecnologia que você gostaria de aprender? Digite 'sim' em caso positivo."
+  );
+}
